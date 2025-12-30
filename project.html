@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Pooja Choudhary</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #0f172a, #020617);
+      color: #e5e7eb;
+    }
+
+    /* ---------- NAV ---------- */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(2, 6, 23, 0.9);
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #e5e7eb;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    /* ---------- MAIN ---------- */
+    .container {
+      width: 85%;
+      margin: auto;
+      padding-top: 120px;
+      padding-bottom: 80px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      color: #38bdf8;
+      border: 1px solid #38bdf8;
+      background: rgba(56, 189, 248, 0.15);
+      margin-bottom: 15px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .title h1 {
+      font-size: 40px;
+    }
+
+    .title h1 span {
+      color: #38bdf8;
+    }
+
+    .title p {
+      margin-top: 10px;
+      color: #cbd5f5;
+      font-size: 16px;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ---------- PROJECT GRID ---------- */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 16px;
+      padding: 28px;
+      transition: 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.2);
+    }
+
+    .project-card h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+      color: #93c5fd;
+    }
+
+    .project-meta {
+      font-size: 13px;
+      color: #38bdf8;
+      margin-bottom: 12px;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      color: #d1d5db;
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    .tech {
+      font-size: 13px;
+      margin-bottom: 18px;
+      color: #38bdf8;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      margin-top: auto;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #38bdf8;
+      color: #020617;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 600px) {
+      .title h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">MyPortfolio</a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="achievement.html">Achievements</a></li>
+        <li><a href="contact.html">Contact & Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PROJECTS -->
+  <div class="container">
+    <div class="title">
+      <span class="badge">My Work</span>
+      <h1>Featured <span>Projects</span></h1>
+      <p>
+        A collection of projects I’ve built to practice web development,
+        programming fundamentals, and UI design concepts.
+      </p>
+    </div>
+
+    <div class="projects">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div>
+          <h3>Yatrika – Tourism Platform</h3>
+          <div class="project-meta">Web Development Project</div>
+          <p>
+            A web-based tourism platform designed to help users explore Indian
+            destinations with a clean and user-friendly interface.
+          </p>
+          <div class="tech">HTML • CSS</div>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn">Live Demo</a>
+          <a href="https://github.com/Pooja0813" class="btn">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div>
+          <h3>Text-Based Adventure Game</h3>
+          <div class="project-meta">C Programming • Logic Building</div>
+          <p>
+            A console-based adventure game developed in C for Techfest 2024,
+            focused on game logic, storytelling, and user interaction.
+          </p>
+          <div class="tech">C Programming</div>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn">Details</a>
+          <a href="https://github.com/Pooja0813" class="btn">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div>
+          <h3>Personal Portfolio Website</h3>
+          <div class="project-meta">Frontend • UI Design</div>
+          <p>
+            A responsive personal portfolio website built to showcase my skills,
+            projects, achievements, and contact information.
+          </p>
+          <div class="tech">HTML • CSS • UI Design</div>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn">Live Demo</a>
+          <a href="https://github.com/Pooja0813" class="btn">GitHub</a>
+        </div>
+      </div>
+
+      
+  </div>
+<footer>
+    © 2025 Pooja Choudhary | Achievements
+  </footer>
+</body>
+</html>
